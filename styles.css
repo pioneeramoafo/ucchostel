@@ -1,0 +1,412 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.image-container {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-right: 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid deepskyblue;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 30px;
+}
+
+.nav-button {
+    background-color: deepskyblue;
+    border: none;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+.nav-button a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+    border-bottom: 1px solid deepskyblue;
+}
+
+.welcome-text {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.explore-button {
+    font-weight: bolder;
+    background-color: deepskyblue;
+    position: absolute;
+    left: 40%;
+    border: none;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+.explore-button:hover {
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+.searchby {
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+.searchby:hover {
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 90%;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    background-color: deepskyblue;
+    width: 20%;
+    height: 160px;
+    padding: 10px;
+    box-shadow: 7px 8px 18px -3px;
+}
+
+.grid2 {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+    width: 20%;
+    height: 160px;
+    padding: 10px;
+}
+
+.grid img {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.grid2 img {
+    width: 70px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+#hostels {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.hostel-image {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 200px;
+    border: none;
+}
+
+.hostel-image img {
+    width: 100%;
+}
+
+.top {
+    flex: 2;
+    background-color: yellow;
+    height: 140px;
+}
+
+.top img {
+    height: 140px;
+}
+
+.down {
+    flex: 1;
+    background-color: deepskyblue;
+    height: 60px;
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+}
+
+.more {
+    background-color: white;
+    border: none;
+    padding: 0.5em;
+}
+
+.more1 {
+    background-color: darkred;
+    padding: 1em;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+.more1:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 0.4s;
+    box-shadow: 1px 4px 19px -4px;
+}
+
+#reviews {
+    background-color: rgb(56, 47, 47);
+    color: white;
+    padding: 10px;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.review {
+    border: 1px solid white;
+    width: 500px;
+    padding: 5px;
+    height: auto;
+    color: black;
+    border-radius: 5px;
+    background-color: white;
+    position: relative;
+}
+
+.user-image img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.review strong {
+    margin-bottom: 10px;
+}
+
+.rating {
+    position: absolute;
+    float: right;
+    top: 0%;
+    right: 0;
+    margin-right: 10px;
+}
+
+.namer {
+    position: absolute;
+    top: 0;
+    left: 14%;
+}
+
+#complaints {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+    margin-bottom: 40px;
+    margin-left: 160px;
+}
+
+.left {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serifs;
+    padding: 20px;
+}
+
+.right {
+    padding: 20px;
+    background-color: darkred;
+    margin-right: 100px;
+    width: 350px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+form {
+    padding: 10px;
+    color: white;
+}
+
+.submit {
+    background-color: deepskyblue;
+    width: 100px;
+    padding: 0.5em;
+    border: none;
+    
+}
+
+footer {
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.complain-button{
+    background-color: darkred;
+    padding: 1em;
+    border: none;
+    color: white;
+}
+.complain-button:hover{
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+    }
+
+    .grid, .grid2 {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .hostel-image {
+        width: 90%;
+    }
+
+    .welcome-text, .explore-button, .searchby {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .welcome-text {
+        font-size: 24px;
+    }
+
+    .explore-button, .searchby {
+        width: 80%;
+    }
+
+    #hostels {
+        flex-direction: column;
+    }
+
+    .top, .down {
+        height: auto;
+    }
+
+    .review-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .review {
+        width: 90%;
+    }
+
+    .complaints {
+        grid-template-columns: 1fr;
+    }
+
+    .left, .right {
+        font-size: 24px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        margin-top: 20px;
+    }
+    .review{
+        font-size: 14px;
+    }
+
+    .grid, .grid2 {
+        width: 100%;
+    }
+
+    .explore-button, .searchby {
+        width: 100%;
+    }
+
+    .left, .right {
+        font-size: 12px;
+    }
+    .right{
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .left{
+        margin-left: 60px;
+    }
+    #complaints {
+        margin-left: -50px;
+    
+}
+}
